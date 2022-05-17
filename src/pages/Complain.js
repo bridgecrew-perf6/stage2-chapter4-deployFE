@@ -21,7 +21,7 @@ const Complain = () => {
 
   // connect to server in useEffect function
   useEffect(() => {
-    socket = io("https://server-dumbmerchs.herokuapp.com/api/v1", {
+    socket = io("https://newserver-dumbmerchs.herokuapp.com/api/v1", {
       auth: {
         token: localStorage.getItem("token"), // we must set options to get access to socket server
       },
